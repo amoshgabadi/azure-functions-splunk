@@ -101,7 +101,7 @@ const getHECPayload = async function(message, sourcetype) {
 }
 
 const sendToHEC = async function(message, sourcetype) {
-
+    console.log('trying to send data');
     let headers = {
         "Authorization": `Splunk ${process.env["SPLUNK_HEC_TOKEN"]}`,
         "Content-Type": "application/json"
